@@ -23,7 +23,7 @@ def upload_images(listing_id, image_urls):
     # Upload new images
     for i, image_path in enumerate(image_paths, 1):
         # Define the upload URL
-        upload_url = f'https://openapi.etsy.com/v3/application/shops/42849661/listings/{listing_id}/images'
+        upload_url = f'https://openapi.etsy.com/v3/application/shops/SHOPID/listings/{listing_id}/images'
 
         # Prepare multipart/form-data request
         with open(image_path, 'rb') as image_file:
