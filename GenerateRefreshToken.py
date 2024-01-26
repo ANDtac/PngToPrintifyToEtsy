@@ -7,8 +7,8 @@ import base64
 from os import system
 
 # Etsy Authentication details
-etsy_client_id = 'h3qbezy1r36z82ol47qpw3dz'
-etsy_client_secret = '9oa6uq4ivv'
+etsy_client_id = ''
+etsy_client_secret = ''
 etsy_redirect_uri = 'http://localhost:5000/callback'
 scope = 'listings_w listings_r'
 authorization_base_url = 'https://www.etsy.com/oauth/connect'
