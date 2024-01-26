@@ -13,7 +13,7 @@ def delete_listing_images(listing_id, listing_image_ids):
 
     # Delete each image by its ID
     for listing_image_id in listing_image_ids:
-        delete_image_url = f'https://openapi.etsy.com/v3/application/shops/42849661/listings/{listing_id}/images/{listing_image_id}'
+        delete_image_url = f'https://openapi.etsy.com/v3/application/shops/SHOPID/listings/{listing_id}/images/{listing_image_id}'
         response = requests.delete(delete_image_url, headers=delete_image_headers)
 
         #if response.status_code != 204:
