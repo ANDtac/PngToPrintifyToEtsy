@@ -31,7 +31,7 @@ def set_variation_images(listing_id):
         })
 
     # Set the variation images
-    variation_image_url = f'https://openapi.etsy.com/v3/application/shops/42849661/listings/{listing_id}/variation-images'
+    variation_image_url = f'https://openapi.etsy.com/v3/application/shops/SHOPID/listings/{listing_id}/variation-images'
     response = requests.post(variation_image_url, headers=headers, json={'variation_images': variation_images})
     if response.status_code != 200:
         print("Error setting variation images:", response.text)
