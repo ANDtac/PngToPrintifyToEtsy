@@ -3,9 +3,9 @@ import os
 import dropbox
 from dropboxAuthentication import refresh_dropbox_access_token
 
-dropbox_app_key = '972gdie2de0qrce'
-dropbox_app_secret = '06odfoq4gt7rtvf'
-dropbox_refresh_token = 'nqJlIJqVCpkAAAAAAAAAAbAy6IDo7XOoP2OGb6XzcnSiwU_qa9iIpNA8PRb6DSau'
+dropbox_app_key = ''
+dropbox_app_secret = ''
+dropbox_refresh_token = ''
 image_urls = []
 
 def dropbox_upload(image_files):
