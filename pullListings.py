@@ -2,7 +2,7 @@ import requests
 from etsyAuthentication import get_etsy_access_token, get_etsy_client_id
 
 # Endpoint for getting all listings from a shop
-pull_listings_url = f"https://openapi.etsy.com/v3/application/shops/42849661/listings"
+pull_listings_url = f"https://openapi.etsy.com/v3/application/shops/SHOPNAME/listings"
 
 def pull_listings(state):
     pull_listings_headers = {
