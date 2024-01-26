@@ -1,8 +1,8 @@
 import requests
 from refresh_token_config import refresh_token
 
-etsy_client_id = 'h3qbezy1r36z82ol47qpw3dz'
-etsy_client_secret = '9oa6uq4ivv'
+etsy_client_id = ''
+etsy_client_secret = ''
 etsy_refresh_token = refresh_token
 etsy_redirect_uri = 'http://localhost:5000/callback'
 scope = 'listings_w'
