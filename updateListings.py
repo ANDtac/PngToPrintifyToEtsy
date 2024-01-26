@@ -147,7 +147,7 @@ def update_listings(grouped_data, listings_json_draft, listings_json_active):
 
             update_listing_json_data = json.dumps(new_listing_params)
 
-            update_listing_url = 'https://openapi.etsy.com/v3/application/shops/42849661/listings/'+str(listing_id_toUpdate)
+            update_listing_url = 'https://openapi.etsy.com/v3/application/shops/SHOPID/listings/'+str(listing_id_toUpdate)
 
             response = requests.patch(update_listing_url, headers=update_listing_headers, data=update_listing_json_data)
             if response.status_code == 200:
@@ -205,7 +205,7 @@ def update_all_changed_listings(changed_listings):
 
             update_listing_json_data = json.dumps(new_listing_params)
 
-            update_listing_url = 'https://openapi.etsy.com/v3/application/shops/42849661/listings/'+str(listing_id_toUpdate)
+            update_listing_url = 'https://openapi.etsy.com/v3/application/shops/SHOPID/listings/'+str(listing_id_toUpdate)
 
             response = requests.patch(update_listing_url, headers=update_listing_headers, data=update_listing_json_data)
             if response.status_code == 200:
